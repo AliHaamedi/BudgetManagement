@@ -11,14 +11,14 @@ let details = document.querySelector('#details')
 btt.addEventListener('click' , ()=>{
     if(radioDar.checked && meghdar.valueAsNumber > 0){
         daraamad.push(meghdar.valueAsNumber);
-        mosbat(meghdar.valueAsNumber , details.value);
+        mosbat(meghdar.valueAsNumber , details.value || '-بدون توضیحات-');
         meghdar.value = '0';
         details.value = ""
         moj.innerHTML = mojodi()
     }else if(radioHaz.checked && meghdar.valueAsNumber > 0) {
         if( mojodi() >= meghdar.valueAsNumber){
         hazine.push(meghdar.valueAsNumber);
-        manfi(meghdar.valueAsNumber , details.value);
+        manfi(meghdar.valueAsNumber , details.value || '-بدون توضیحات-');
         moj.innerHTML = mojodi()
         } else {
             alert('هزینه بیشتر از موجودی می باشد')
