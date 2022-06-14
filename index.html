@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal accounting</title>
+    <link href="/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <section class="main">
+        <header>
+            <h1>موجودی : <span id="moj">0</span> ریال </h1>
+        </header>
+        <section>
+            <ul>
+            </ul>
+        </section>
+        <footer>
+            <form action="">
+                <div class="upform">
+                    <div class="radio">
+                        <input type="radio" name="manmo" id="radioDar">
+                        <label for="radioDar">درآمد</label>
+                        <br>
+                        <br>
+                        <input type="radio" name="manmo" id="radioHaz" checked>
+                        <label for="radioHaz">هزینه</label>
+                    </div>
+                    <div class="inpo">
+                        <div>
+                        <label for="meghdar">مقدار:</label>
+                        <input type="number" name="number" id="meghdar" min="0" value="0">
+                        </div>
+                        <br>
+                        <div>
+                        <label for="text">توضیحات:</label>
+                        <input type="text" name="text" id="details">
+                        </div>
+                    </div>
+                </div>
+                <div class="btt">ثبت</div>
+            </form>
+        </footer>
+    </section>
+
+    <script src="/script.js"></script>
+</body>
+
+</html>

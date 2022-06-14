@@ -1,0 +1,141 @@
+:root {
+    font-size: 20px;
+
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background: linear-gradient(to right, rgba(255, 255, 0, 0.384) , rgba(252, 99, 170, 0.305));
+    background-size: 400% 400%;
+    animation: changeColor 5s linear alternate infinite;
+}
+
+
+.main {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    height: 98vh;
+    border: 1px solid black;
+    border-radius: 20px 20px 0 0 ;
+    margin: auto;
+}
+
+
+/* HEADER */
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header h1 {
+    font-size: 2rem;
+}
+
+/* SECTION */
+section {
+    height: 70%;
+    overflow: auto;
+    border: 1px solid black;
+    border-radius: 30px 30px 0 0 ;
+}
+section::-webkit-scrollbar {
+    display:none;
+}
+
+
+ul {
+    display: flex;
+    flex-direction: column-reverse;
+
+}
+
+ul li {
+    list-style-type: none;
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+}
+li i { 
+    width: 10%;
+    font-size: 2rem ;
+    align-self: center;
+}
+
+li div {
+    width: 90%;
+}
+
+
+.green {
+    background-color: rgba(0, 128, 0, 0.3);
+}
+
+.red {
+    background-color: rgba(255, 0, 0, 0.3)
+}
+
+
+/* FOOTER */
+footer {
+}
+
+form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+}
+
+.upform {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.radio {
+    border: 1px solid black;
+    margin: 10px;
+    padding: 10px;
+    background-image: linear-gradient(green ,#fff , red);
+    border-radius: 10px;
+}
+
+.inpo {
+    border: 1px solid black;
+    margin: 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    border-radius: 10px;
+}
+
+.btt {
+    border: 1px solid black;
+    text-align: center;
+    border-radius: 10px;
+    width: 80%;
+    margin: 10px auto;
+    height: 40px;
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+
+
+@keyframes changeColor {
+    0% { background-position: 0 100%;}
+    50% { background-position: 50% 50%;}
+    100%{ background-position: 100% 0%;}
+}
